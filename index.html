@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Caixa Eletrônico Fake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Caixa Eletrônico</h1>
+    <form id="form">
+      <input type="text" id="cartao" placeholder="Número do Cartão" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <input type="number" id="valor" placeholder="Valor" required>
+      <select id="acao">
+        <option value="saldo">Ver Saldo</option>
+        <option value="sacar">Sacar Dinheiro</option>
+      </select>
+      <button type="submit">Confirmar</button>
+    </form>
+    <div id="mensagem"></div>
+    <div id="comprovante" class="comprovante" style="display:none;"></div>
+  </div>
+
+  <script src="html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
